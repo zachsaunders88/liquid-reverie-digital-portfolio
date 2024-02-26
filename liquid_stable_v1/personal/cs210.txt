@@ -1,0 +1,5 @@
+#COMPSCI 210: Computer Organization
+
+_Relevant Skills: Low-Level Data Representation, Computer Organization, Instruction Execution Model, Assembly Language Proficiency, High-Level Language Implementation, Memory Subsystem Understanding, Secure Multi-User Operating System, Data Mapping, Computer Architecture Development, C Programming, Memory Organization
+
++Achieved Grade: B+ 

@@ -1,0 +1,5 @@
+#COMPSCI 101: Principles of Programming
+
+_Relevant Skills: Basic Programming in Python, Problem Solving, Functions, Input and Output Handling, Standard Data Structures, Standard Python Modules, Problem Analysis, Program Execution Understanding, Debugging and Testing
+
++Achieved Grade: A+ 

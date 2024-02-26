@@ -1,0 +1,5 @@
+#COMPSCI 313: Computer Architecture
+
+_Relevant Skills: Processor Architecture Understanding, Pipelining Concepts, Memory Hierarchy Comprehension, Assembly Language Proficiency, Performance Evaluation, Multiprocessing Knowledge, I/O and Network Interfacing, Compiler and OS Support, Embedded Processors, Design Considerations
+
++Achieved Grade: C- 

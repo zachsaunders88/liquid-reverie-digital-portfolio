@@ -1,0 +1,5 @@
+#COMPSCI 215: Data Communication & Security
+
+_Relevant Skills: Understanding OSI Reference Model, TCP/IP Protocol Stack, Layered Comunication, Encapsulation, Packet Forwarding, Network Partioning, Network Topology, Encryption Fundamentals, Classic Cryptography, Secure Communication, Security Awareness
+
++Achieved Grade: C+ 

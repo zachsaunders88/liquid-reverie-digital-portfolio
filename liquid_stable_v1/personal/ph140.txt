@@ -1,0 +1,5 @@
+#PHYSICS 140: Digital Fundamentals
+
+_Relevant Skills: Boolean Algebra Proficiency, Digital Logic Circuit Construction, Fundamental Digital Logic Gates, Digital Logic Circuit Simulation, Interdisciplinary Understanding
+
++Achieved Grade: A 

@@ -1,0 +1,5 @@
+#COMPSCI 373: Computer Graphics & Image Processing
+
+_Relevant Skills: Basic Geometric Processes, Graphics Modeling Concepts, Image Processing Fundamentals, OpenGL Graphics Pipeline, Computer Graphics Theory, 3D Modeling and Rendering, Image Analysis and Scene Formation, Colour Management, Image Segmentation, Practial Python Programming Experience
+
++Achieved Grade: C 

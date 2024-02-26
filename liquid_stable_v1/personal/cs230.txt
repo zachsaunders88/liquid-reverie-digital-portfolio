@@ -1,0 +1,5 @@
+#COMPSCI 230: Object Oriented Software Development
+
+_Relevant Skills: Object-Oriented Programming, Software Analysis and Design, UML Modeling, Design and Reuse Testing, Java Programming, Software Quality and Complexity, Object-Oriented Design Principles and Patterns, GUI Programming, Multi-Threading
+
++Achieved Grade: A+ 

@@ -1,0 +1,5 @@
+#COMPSCI 120: Mathematics for Computer Science
+
+_Relevant Skills: Mathematical Foundations, Abstract Object Reasoning, Number Theory, String and Set Manipulation, Methods of Proof, Algorithm Analysis, Function Understanding, Graph and Tree Concepts, Counting and Probability, Logical Reasoning
+
++Achieved Grade: C 

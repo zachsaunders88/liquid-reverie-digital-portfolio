@@ -1,0 +1,5 @@
+#COMPSCI 130: Introduction to Software Fundamentals
+
+_Relevant Skills: Advanced Programming in Python, Testing and Debugging, Efficient Data Organization, Quality Software Development, Problem Decomposition, Error Handling, Recursion, Data Structures, Language Proficiency
+
++Achieved Grade: A 

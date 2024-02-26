@@ -1,0 +1,5 @@
+#COMPSCI 335: Web Programming & Distributed Services
+
+_Relevant Skills: Functional Programming Concepts, Web Application Development, Security Awareness, Multi-Paradigm Programming, Data Integration Skills, Declarative Programming, Dynamic Web Applications, Performance Optimization, Browser Applications, C# Programming, JavaScript/HTML/CSS Programming
+
++Achieved Grade: B- 
