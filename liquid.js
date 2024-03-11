@@ -11,7 +11,7 @@ function slideToNext(currentDivId, nextDivId) {
         currentDiv.classList.remove('slide-out');
 
         nextDiv.classList.remove('slide-in');
-    }, 1000); // Match this with the duration of slide animation in CSS
+    }, 1000); 
 }
 
 function slideToPrior(currentDivId, nextDivId) {
@@ -27,7 +27,7 @@ function slideToPrior(currentDivId, nextDivId) {
         currentDiv.classList.remove('slide-out2');
 
         nextDiv.classList.remove('slide-in2');
-    }, 1000); // Match this with the duration of slide animation in CSS
+    }, 1000);
 }
 
 function invertColours(corner) {
@@ -51,7 +51,7 @@ function slideToRight(currentDivId, rightDivId) {
         currentDiv.classList.remove('slide-out-right');
 
         rightDiv.classList.remove('slide-in-right');
-    }, 1000); // Match this with the duration of slide animation in CSS
+    }, 1000); 
 }
 
 function slideToLeft(currentDivId, leftDivId) {
@@ -68,7 +68,7 @@ function slideToLeft(currentDivId, leftDivId) {
 
         leftDiv.classList.remove('slide-out-left');
         leftDiv.classList.remove('slide-in-left');
-    }, 1000); // Match this with the duration of slide animation in CSS
+    }, 1000); 
 }
 
 function fontChangeAnim() {
@@ -77,11 +77,9 @@ function fontChangeAnim() {
     setTimeout(function() {
         console.log("After 2 seconds");
         
-        // Continue with the rest of your function logic
         document.getElementById('reverie-title').classList.remove('animated');
         document.getElementById('reverie-title').classList.remove('fontalicious');
     
-        // Call the callback to signal that the function has completed
         if (typeof callback === 'function') {
           callback();
         }
@@ -237,7 +235,6 @@ function openIndividualEchoesStoryModal(book) {
             }
 
             console.log("Lines:", lines);
-            // Now you can do something with the file content
         })
         .catch(error => {
             console.error('Error fetching file:', error);
@@ -277,7 +274,6 @@ function openIndividualEchoesCharacterModal(name) {
                     characterContent.textContent = lines[i].slice(1, -1);
                 }
             }
-            // Now you can do something with the file content
         })
         .catch(error => {
             console.error('Error fetching file:', error);
