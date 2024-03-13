@@ -287,15 +287,15 @@
 
 
         <div style="width: 100%; height: 100%; display: flex; flex-direction: row; z-index: 0;">
-            <div id="personal-side1" onclick="openAboutMeModal()" class="hvr-grow third-div" style="background-image: url('./images/about-me.webp'); background-size: cover;">
+            <div id="personal-side1" onclick="openModal('about-me-modal')" class="hvr-grow third-div" style="background-image: url('./images/about-me.webp'); background-size: cover;">
                 <h1 class="third-div-text" style="margin-top: 100px;">About Me</h1>
                 <img id="aflen-stories" class="third-div-icon" src="./images/user.png" style="width: 100px;"/>
             </div>
-            <div id="personal-side2" onclick="openSkillsModal()" class="third-div hvr-grow" style="background-image: url('./images/my-skills.png'); background-size: cover;">
+            <div id="personal-side2" onclick="openModal('skills-modal')" class="third-div hvr-grow" style="background-image: url('./images/my-skills.png'); background-size: cover;">
                 <h1 class="third-div-text" style="margin-top: 100px;">My Skills</h1>
                 <img id="aflen-map" class="third-div-icon" src="./images/experience.png" style="width: 125px;"/>
             </div>
-            <div id="personal-side3" onclick="openProjectsModal()" class="hvr-grow third-div" style="background-image: url('./images/my-projects.png'); background-size: cover;">
+            <div id="personal-side3" onclick="openModal('my-projects-modal')" class="hvr-grow third-div" style="background-image: url('./images/my-projects.png'); background-size: cover;">
                 <h1 class="third-div-text" style="margin-top: 100px;">My Projects</h1>
                 <img id="aflen-characters" class="third-div-icon" src="./images/database.png" style="width: 100px;"/>
             </div>
@@ -353,7 +353,7 @@
             </div>
         </div>
 
-        <div id="echoes-individual-story" class="overlay-story">
+        <div id="echoes-individual-story-modal" class="overlay-story">
             <div class="individual-story-modal">
                 <h1 id="story-title" style="width:auto; border-radius: 5px; margin-top:-15px ;padding: 5px;color: black; background-color: #e5decf;"> </h1>
                 <div id="story-content" class="story-content">
@@ -364,21 +364,21 @@
         <div id="echoes-location-modal" class="overlay">
             <div id="echoes-location-modal-inner" class="location-modal" style="width:960px; height: 600px;">
               <!-- Close button -->
-              <span class="close-btn" onclick="closeEchoesLocationModal()">&times;</span>
+              <span class="close-btn" onclick="closeModal('echoes-location-modal')">&times;</span>
               <!-- Modal content -->
-              <div class="hvr-grow" onclick="openEmpyreanLocationModal()" style="width:100%; height: 20%; background-image: url('./images/locations-empyrean.png'); background-size: cover; display: flex; flex-direction: column; cursor: pointer;">
+              <div class="hvr-grow" onclick="openModal('empyrean-location-modal')" style="width:100%; height: 20%; background-image: url('./images/locations-empyrean.png'); background-size: cover; display: flex; flex-direction: column; cursor: pointer;">
                 <h1 class="locations-text" style="color: white; text-align: center; margin-top: 40px;">Empyrean Realm</h1>
             </div>
-              <div class="hvr-grow" onclick="openMortalLocationModal()" style="width:100%; height: 20%; background-image: url('./images/locations-mortal.png'); background-size: cover; display: flex; background-position: center; flex-direction: column; cursor: pointer;">
+              <div class="hvr-grow" onclick="openModal('mortal-location-modal')" style="width:100%; height: 20%; background-image: url('./images/locations-mortal.png'); background-size: cover; display: flex; background-position: center; flex-direction: column; cursor: pointer;">
                 <h1 class="locations-text" style="color: white; text-align: center; margin-top: 40px;">Mortal Realm</h1>
             </div>
-              <div class="hvr-grow" onclick="openTempterLocationModal()" style="width: 100%; height: 20%; background-image: url('./images/locations-tempter2.png'); background-size: cover; display: flex; flex-direction: column; cursor: pointer; background-position: bottom;">
+              <div class="hvr-grow" onclick="openModal('tempter-location-modal')" style="width: 100%; height: 20%; background-image: url('./images/locations-tempter2.png'); background-size: cover; display: flex; flex-direction: column; cursor: pointer; background-position: bottom;">
                 <h1 class="locations-text" style="color: white; text-align: center; margin-top: 40px;">Tempter's Realm</h1>
             </div>
-              <div class="hvr-grow" onclick="openCoreLocationModal()" style="width: 100%; height: 20%; background-image: url('./images/locations-core.png'); background-size: cover; display: flex; flex-direction: column; cursor: pointer;">
+              <div class="hvr-grow" onclick="openModal('core-location-modal')" style="width: 100%; height: 20%; background-image: url('./images/locations-core.png'); background-size: cover; display: flex; flex-direction: column; cursor: pointer;">
                 <h1 class="locations-text" style="color: white; text-align: center; margin-top: 40px;">The Core</h1>
             </div>
-              <div class="hvr-grow" onclick="openLiminalLocationModal()" style="width: 100%; height: 20%; background-image: url('./images/locations-between.png'); background-size: cover; display: flex; flex-direction: column; cursor: pointer;">
+              <div class="hvr-grow" onclick="openModal('liminal-location-modal')" style="width: 100%; height: 20%; background-image: url('./images/locations-between.png'); background-size: cover; display: flex; flex-direction: column; cursor: pointer;">
                 <h1 class="locations-text" style="color: white; text-align: center; margin-top: 40px;">Liminal Realm</h1>
             </div>
             </div>
@@ -387,19 +387,19 @@
         <div id="empyrean-location-modal" class="overlay">
             <div id="empyrean-location-modal-inner" class="empyrean-modal">
                 <div class="grid-container-locations">
-                    <a class="box" onclick="openIndividualEchoesStoryModal('btf')" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
                         <h1 class="location-title" style="text-decoration: none;">Kingdom of Heaven</h1>
                         <img src="./images/kingdom-of-heaven.png">
                     </a>
-                    <a class="box" onclick="openIndividualEchoesStoryModal('hos')" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
                         <h1 class="location-title" style="text-decoration: none;">Vault of Heaven</h1>
                         <img src="./images/vault-of-heaven.png">
                     </a>
-                    <a class="box" onclick="openIndividualEchoesStoryModal('gm')" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
                         <h1 class="location-title" style="text-decoration: none;">Arva Aurea</h1>
                         <img src="./images/arva-aurea2.png">
                     </a>
-                    <a class="box" onclick="openIndividualEchoesStoryModal('pog')" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
                         <h1 class="location-title" style="text-decoration: none;">Marble Citadel</h1>
                         <img src="./images/marble-citadel.png">
                     </a>
@@ -410,15 +410,15 @@
         <div id="mortal-location-modal" class="overlay">
             <div class="mortal-modal" id="mortal-location-modal-inner">
                 <div class="grid-container-locations">
-                    <a class="box" onclick="openIndividualEchoesStoryModal('btf')" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
                         <h1 class="location-title" style="text-decoration: none;">Barnes</h1>
                         <img src="./images/barnes.png">
                     </a>
-                    <a class="box" onclick="openIndividualEchoesStoryModal('hos')" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
                         <h1 class="location-title" style="text-decoration: none;">New Northern Republic (NNR)</h1>
                         <img src="./images/NNR.png">
                     </a>
-                    <a class="box" onclick="openIndividualEchoesStoryModal('gm')" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
                         <h1 class="location-title" style="text-decoration: none;">Goldfield</h1>
                         <img src="./images/goldfield.png">
                     </a>
@@ -429,23 +429,23 @@
         <div id="tempter-location-modal" class="overlay">
             <div class="tempter-modal" id="tempter-location-modal-inner">
                 <div class="grid-container-locations">
-                    <a class="box" onclick="openIndividualEchoesStoryModal('btf')" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
                         <h1 class="location-title-white" style="text-decoration: none;">Hospital Of Stars</h1>
                         <img src="./images/hospital-of-stars.png">
                     </a>
-                    <a class="box" onclick="openIndividualEchoesStoryModal('hos')" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
                         <h1 class="location-title-white" style="text-decoration: none;">Ruins of the Redeemed</h1>
                         <img src="./images/ruins-of-the-redeemed.png">
                     </a>
-                    <a class="box" onclick="openIndividualEchoesStoryModal('gm')" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
                         <h1 class="location-title-white" style="text-decoration: none;">Monument Of Lies</h1>
                         <img src="./images/monument-of-lies.png">
                     </a>
-                    <a class="box" onclick="openIndividualEchoesStoryModal('gm')" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
                         <h1 class="location-title-white" style="text-decoration: none;">The Topaz Court</h1>
                         <img src="./images/topaz-court.png">
                     </a>
-                    <a class="box" onclick="openIndividualEchoesStoryModal('gm')" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
                         <h1 class="location-title-white" style="text-decoration: none;">Blighted Citadel</h1>
                         <img src="./images/blighted-citadel.png">
                     </a>
@@ -456,11 +456,11 @@
         <div id="core-location-modal" class="overlay">
             <div class="core-modal" id="core-location-modal-inner">
                 <div class="grid-container-locations">
-                    <a class="box" onclick="openIndividualEchoesStoryModal('btf')" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
                         <h1 class="location-title-white" style="text-decoration: none;">Dreadnaught's Turrim</h1>
                         <img src="./images/dreadnaughts-turrim.png">
                     </a>
-                    <a class="box" onclick="openIndividualEchoesStoryModal('hos')" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
                         <h1 class="location-title-white" style="text-decoration: none;">Prison of the False</h1>
                         <img src="./images/prison-of-the-false.png">
                     </a>
@@ -471,43 +471,23 @@
         <div id="liminal-location-modal" class="overlay">
             <div class="liminal-modal" id="liminal-location-modal-inner">
                 <div class="grid-container-locations">
-                    <a class="box" onclick="openIndividualEchoesStoryModal('btf')" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
                         <h1 class="location-title-white" style="text-decoration: none;">Barnes</h1>
                         <img src="./images/barnes.png">
                     </a>
-                    <a class="box" onclick="openIndividualEchoesStoryModal('hos')" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
                         <h1 class="location-title-white" style="text-decoration: none;">New Northern Republic (NNR)</h1>
                         <img src="./images/vault-of-heaven.png">
                     </a>
-                    <a class="box" onclick="openIndividualEchoesStoryModal('gm')" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
                         <h1 class="location-title-white" style="text-decoration: none;">Goldfield</h1>
                         <img src="./images/vault-of-heaven.png">
                     </a>
-                    <a class="box" onclick="openIndividualEchoesStoryModal('gm')" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
                         <h1 class="location-title-white" style="text-decoration: none;">Goldfield</h1>
                         <img src="./images/vault-of-heaven.png">
                     </a>
-                    <a class="box" onclick="openIndividualEchoesStoryModal('gm')" style="border-radius: 0px; background-color: transparent; cursor:auto;">
-                        <h1 class="location-title-white" style="text-decoration: none;">Goldfield</h1>
-                        <img src="./images/vault-of-heaven.png">
-                    </a>
-                    <a class="box" onclick="openIndividualEchoesStoryModal('gm')" style="border-radius: 0px; background-color: transparent; cursor:auto;">
-                        <h1 class="location-title-white" style="text-decoration: none;">Goldfield</h1>
-                        <img src="./images/vault-of-heaven.png">
-                    </a>
-                    <a class="box" onclick="openIndividualEchoesStoryModal('gm')" style="border-radius: 0px; background-color: transparent; cursor:auto;">
-                        <h1 class="location-title-white" style="text-decoration: none;">Goldfield</h1>
-                        <img src="./images/vault-of-heaven.png">
-                    </a>
-                    <a class="box" onclick="openIndividualEchoesStoryModal('gm')" style="border-radius: 0px; background-color: transparent; cursor:auto;">
-                        <h1 class="location-title-white" style="text-decoration: none;">Goldfield</h1>
-                        <img src="./images/vault-of-heaven.png">
-                    </a>
-                    <a class="box" onclick="openIndividualEchoesStoryModal('gm')" style="border-radius: 0px; background-color: transparent; cursor:auto;">
-                        <h1 class="location-title-white" style="text-decoration: none;">Goldfield</h1>
-                        <img src="./images/vault-of-heaven.png">
-                    </a>
-                    <a class="box" onclick="openIndividualEchoesStoryModal('gm')" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
                         <h1 class="location-title-white" style="text-decoration: none;">Goldfield</h1>
                         <img src="./images/vault-of-heaven.png">
                     </a>
@@ -518,7 +498,7 @@
         <div id="echoes-character-modal" class="overlay">
             <div id="echoes-character-modal-inner" class="character-modal">
               <!-- Close button -->
-              <span class="close-btn" onclick="closeEchoesCharacterModal()">&times;</span>
+              <span class="close-btn" onclick="closeModal('echoes-character-modal')">&times;</span>
                 
               <!-- Modal content -->
                 <div class="grid-container-characters">
@@ -589,7 +569,7 @@
             </div>
         </div>
 
-        <div id="echoes-individual-character" class="overlay-story">
+        <div id="echoes-individual-character-modal" class="overlay-story">
             <div class="individual-character-modal" style="align-items: center;">
                 <div style="display: flex; text-align: center;">
                     <img id="character-image" class="box-characters" src="" style="width: 200px; cursor:auto;"/>
@@ -607,15 +587,15 @@
         </div>
 
         <div style="width: 100%; height: 100%; display: flex; flex-direction: row; z-index: 0;">
-            <div id="echoes-side1" class="hvr-grow third-div" onclick="openEchoesStoryModal()" style="background-image: url('./images/echoes-stories.jpg'); background-size: cover;">
+            <div id="echoes-side1" class="hvr-grow third-div" onclick="openModal('echoes-story-modal')" style="background-image: url('./images/echoes-stories.jpg'); background-size: cover;">
                 <h1 class="third-div-text" style="margin-top: 100px;">Stories</h1>
                 <img id="echoes-stories" class="third-div-icon" src="./images/book.png" style="width: 100px;"/>
             </div>
-            <div id="echoes-side2" class="third-div hvr-grow" onclick="openEchoesLocationModal()" style="background-image: url('./images/echoes-map.jpg'); background-size: cover;">
+            <div id="echoes-side2" class="third-div hvr-grow" onclick="openModal('echoes-location-modal')" style="background-image: url('./images/echoes-map.jpg'); background-size: cover;">
                 <h1 class="third-div-text" style="margin-top: 100px;">Locations</h1>
                 <img id="echoes-map" class="third-div-icon" src="./images/map-icon.png" style="width: 200px;"/>
             </div>
-            <div id="echoes-side3" class="hvr-grow third-div" onclick="openEchoesCharacterModal()" style="background-image: url('./images/echoes-characters2.png'); background-size: cover;">
+            <div id="echoes-side3" class="hvr-grow third-div" onclick="openModal('echoes-character-modal')" style="background-image: url('./images/echoes-characters2.png'); background-size: cover;">
                 <h1 class="third-div-text" style="margin-top: 100px;">Characters</h1>
                 <img id="echoes-characters" class="third-div-icon" src="./images/people.png" style="width: 125px;"/>
             </div>

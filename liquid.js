@@ -146,14 +146,8 @@ function revealText(name) {
     }
 }
 
-var individualEchoesStoryModal = document.getElementById('echoes-individual-story');
-var individualEchoesCharacterModal = document.getElementById('echoes-individual-character');
-
-var individualHalcyonStoryModal = document.getElementById('halcyon-individual-story');
-var individualHalcyonCharacterModal = document.getElementById('halcyon-individual-character');
-
-var individualAflenStoryModal = document.getElementById('aflen-individual-story');
-var individualAflenCharacterModal = document.getElementById('aflen-individual-character');
+var individualEchoesStoryModal = document.getElementById('echoes-individual-story-modal');
+var individualEchoesCharacterModal = document.getElementById('echoes-individual-character-modal');
 
 var individualCourseModal = document.getElementById('individual-course-modal');
 
@@ -318,250 +312,25 @@ function openIndividualCourseModal(name) {
 
 }
 
-function closeIndividualEchoesCharacterModal() {
-    individualEchoesCharacterModal.style.display = 'none';
+function openModal(modalName) {
+    var modalTitle = modalName;
+    var tempModal = document.getElementById(modalTitle);
+    var tempModalInner = document.getElementById(modalTitle + "-inner");
+    tempModal.style.display = 'flex';
+    tempModalInner.classList.add('slide-in-blurred-bottom');
+    tempModalInner.scrollTop = 0;
 }
 
-function closeIndividualEchoesStoryModal() {
-    individualEchoesStoryModal.style.display = 'none';
-    let contentDiv = document.getElementById('story-content');
-    contentDiv.innerHTML = '';
+function closeModal(modalName) {
+    var modalTitle = modalName;
+    var tempModal = document.getElementById(modalTitle);
+    var tempModalInner = document.getElementById(modalTitle + "-inner");
+    tempModal.style.display = 'none';
+    tempModalInner.classList.remove('slide-in-blurred-bottom');
 }
-
-function closeIndividualHalcyonCharacterModal() {
-    individualHalcyonCharacterModal.style.display = 'none';
-}
-
-function closeIndividualHalcyonStoryModal() {
-    individualHalcyonStoryModal.style.display = 'none';
-    let contentDiv = document.getElementById('story-content');
-    contentDiv.innerHTML = '';
-}
-
-function closeIndividualAflenCharacterModal() {
-    individualAflenCharacterModal.style.display = 'none';
-}
-
-function closeIndividualAflenStoryModal() {
-    individualAflenModal.style.display = 'none';
-    let contentDiv = document.getElementById('story-content');
-    contentDiv.innerHTML = '';
-}
-
-var aboutMeModal = document.getElementById('about-me-modal');
-var aboutMeModalInner = document.getElementById('about-me-modal-inner');
-var skillsModal = document.getElementById('skills-modal');
-var skillsModalInner = document.getElementById('skills-modal-inner');
-var projectsModal = document.getElementById('my-projects-modal');
-var projectsModalInner = document.getElementById('my-projects-modal-inner');
-
-function openAboutMeModal() {
-    aboutMeModal.style.display = 'flex';
-    aboutMeModalInner.classList.add('slide-in-blurred-bottom');
-}
-
-function closeAboutMeModal() {
-    aboutMeModal.style.display = 'none';
-    aboutMeModalInner.classList.remove('slide-in-blurred-bottom');
-}
-
-function openProjectsModal() {
-    projectsModal.style.display = 'flex';
-    projectsModalInner.classList.add('slide-in-blurred-bottom');
-    projectsModalInner.scrollTop = 0;
-}
-
-function closeProjectsModal () {
-    projectsModal.style.display = 'none';
-    projectsModalInner.classList.remove('slide-in-blurred-bottom');
-}
-
-function openSkillsModal() {
-    skillsModal.style.display = 'flex';
-    skillsModalInner.classList.add('slide-in-blurred-bottom');
-    skillsModalInner.scrollTop = 0;
-}
-
-function closeSkillsModal() {
-    skillsModal.style.display = 'none';
-    skillsModalInner.classList.remove('slide-in-blurred-bottom');
-}
-
-var echoesStoryModal = document.getElementById('echoes-story-modal');
-var echoesInnerStoryModal = document.getElementById('echoes-story-modal-inner');
-var echoesLocationModal = document.getElementById('echoes-location-modal');
-var echoesInnerLocationModal = document.getElementById('echoes-location-modal-inner');
-var echoesCharacterModal = document.getElementById('echoes-character-modal');
-var echoesInnerCharacterModal = document.getElementById('echoes-character-modal-inner');
-
-var empyreanLocationModal = document.getElementById('empyrean-location-modal');
-var empyreanLocationModalInner = document.getElementById('empyrean-location-modal-inner');
-
-var mortalLocationModal = document.getElementById('mortal-location-modal');
-var mortalLocationModalInner = document.getElementById('mortal-location-modal-inner');
-
-var tempterLocationModal = document.getElementById('tempter-location-modal');
-var tempterLocationModalInner = document.getElementById('tempter-location-modal-inner');
-
-var coreLocationModal = document.getElementById('core-location-modal');
-var coreLocationModalInner = document.getElementById('core-location-modal-inner');
-
-var liminalLocationModal = document.getElementById('liminal-location-modal');
-var liminalLocationModalInner = document.getElementById('liminal-location-modal-inner');
-
-var halcyonStoryModal = document.getElementById('halcyon-story-modal');
-var halcyonLocationModal = document.getElementById('halcyon-location-modal');
-var halcyonCharacterModal = document.getElementById('halcyon-character-modal');
-
-function openEchoesStoryModal() {
-    echoesStoryModal.style.display = 'flex';
-    echoesInnerStoryModal.classList.add('slide-in-blurred-bottom');
-    echoesInnerStoryModal.scrollTop = 0;
-}
-
-function openEchoesLocationModal() {
-    echoesLocationModal.style.display = 'flex';
-    echoesInnerLocationModal.classList.add('slide-in-blurred-bottom');
-}
-
-function openEchoesCharacterModal() {
-    echoesCharacterModal.style.display = 'flex';
-    echoesInnerCharacterModal.classList.add('slide-in-blurred-bottom');
-    echoesInnerCharacterModal.scrollTop = 0;
-}
-
-function openEmpyreanLocationModal() {
-    empyreanLocationModal.style.display = 'flex';
-    empyreanLocationModalInner.classList.add('slide-in-blurred-bottom');
-}
-
-function closeEmpyreanLocationModal() {
-    empyreanLocationModal.style.display = 'none';
-    empyreanLocationModalInner.classList.remove('slide-in-blurred-bottom');
-}
-
-function openMortalLocationModal() {
-    mortalLocationModal.style.display = 'flex';
-    mortalLocationModalInner.classList.add('slide-in-blurred-bottom');
-}
-
-function closeMortalLocationModal() {
-    mortalLocationModal.style.display = 'none';
-    mortalLocationModalInner.classList.remove('slide-in-blurred-bottom');
-}
-
-function openTempterLocationModal() {
-    tempterLocationModal.style.display = 'flex';
-    tempterLocationModalInner.classList.add('slide-in-blurred-bottom');
-}
-
-function closeTempterLocationModal() {
-    tempterLocationModal.style.display = 'none';
-    tempterLocationModalInner.classList.remove('slide-in-blurred-bottom');
-}
-
-function openCoreLocationModal() {
-    coreLocationModal.style.display = 'flex';
-    coreLocationModalInner.classList.add('slide-in-blurred-bottom');
-}
-
-function closeCoreLocationModal() {
-    coreLocationModal.style.display = 'none';
-    coreLocationModalInner.classList.remove('slide-in-blurred-bottom');
-}
-
-function openLiminalLocationModal() {
-    liminalLocationModal.style.display = 'flex';
-    liminalLocationModalInner.classList.add('slide-in-blurred-bottom');
-}
-
-function closeLiminalLocationModal() {
-    liminalLocationModal.style.display = 'none';
-    liminalLocationModalInner.classList.remove('slide-in-blurred-bottom');
-}
-
-function closeEchoesStoryModal() {
-    echoesStoryModal.style.display = 'none';
-    echoesInnerStoryModal.classList.remove('slide-in-blurred-bottom');
-}
-
-function closeEchoesLocationModal() {
-    echoesLocationModal.style.display = 'none';
-    echoesInnerLocationModal.classList.remove('slide-in-blurred-bottom');
-}
-
-function closeEchoesCharacterModal() {
-    echoesCharacterModal.style.display = 'none';
-    echoesInnerCharacterModal.classList.remove('slide-in-blurred-bottom');
-}
-
-function openHalcyonStoryModal() {
-    halcyonStoryModal.style.display = 'flex';
-}
-
-function openHalcyonLocationModal() {
-    halcyonLocationModal.style.display = 'flex';
-}
-
-function openHalcyonCharacterModal() {
-    halcyonCharacterModal.style.display = 'flex';
-}
-
-function closeHalcyonStoryModal() {
-    halcyonStoryModal.style.display = 'none';
-}
-
-function closeHalcyonLocationModal() {
-    halcyonLocationModal.style.display = 'none';
-}
-
-function closeHalcyonCharacterModal() {
-    halcyonCharacterModal.style.display = 'none';
-}
-
-function closeIndividualCourseModal() {
-    individualCourseModal.style.display = 'none';
-}
-
 
 window.onclick = function(event) {
-    if (event.target == echoesStoryModal) {
-        closeEchoesStoryModal();
-    } else if (event.target == echoesLocationModal) {
-        closeEchoesLocationModal();
-    } else if (event.target == echoesCharacterModal) {
-        closeEchoesCharacterModal();
-    } else if (event.target == individualEchoesStoryModal) {
-        closeIndividualEchoesStoryModal();
-    } else if (event.target == individualEchoesCharacterModal) {
-        closeIndividualEchoesCharacterModal();
-    } else if (event.target == halcyonStoryModal) {
-        closeHalcyonStoryModal();
-    } else if (event.target == halcyonLocationModal) {
-        closeHalcyonLocationModal();
-    } else if (event.target == halcyonCharacterModal) {
-        closeHalcyonCharacterModal();
-    } else if (event.target == individualHalcyonCharacterModal) {
-        closeIndividualHalcyonCharacterModal();
-    } else if (event.target == individualHalcyonStoryModal) {
-        closeIndividualHalcyonStoryModal();
-    } else if (event.target == empyreanLocationModal) {
-        closeEmpyreanLocationModal();
-    } else if (event.target == aboutMeModal) {
-        closeAboutMeModal();
-    } else if (event.target == skillsModal) {
-        closeSkillsModal();
-    } else if (event.target == individualCourseModal) {
-        closeIndividualCourseModal();
-    } else if (event.target == projectsModal) {
-        closeProjectsModal();
-    } else if (event.target == mortalLocationModal) {
-        closeMortalLocationModal();
-    } else if (event.target == tempterLocationModal) {
-        closeTempterLocationModal();
-    } else if (event.target == coreLocationModal) { 
-        closeCoreLocationModal();
-    } else if (event.target == liminalLocationModal) {
-        closeLiminalLocationModal();
+    if (event.target.id.includes('modal')) {
+        closeModal(event.target.id);
     }
-}
+};
