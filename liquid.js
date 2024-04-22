@@ -202,6 +202,7 @@ function openIndividualEchoesStoryModal(book) {
 
             const lines = fileContent.split('\n');
             let contentDiv = document.getElementById('story-content');
+            contentDiv.innerHTML = "";
             let lineNeeded = false;
 
             for (i=0 ; i<lines.length; i++) {
@@ -216,7 +217,7 @@ function openIndividualEchoesStoryModal(book) {
                     tempParagraph.textContent = lines[i].slice(1,-2);
                 } else if (lines[i][0] == '#') {
                     tempParagraph = document.createElement('h2');
-                    tempParagraph.textContent = lines[i].slice(1,-1);
+                    tempParagraph.textContent = lines[i].slice(1, -1);
                     tempParagraph.style.textAlign = 'center';
                     lineNeeded = true;
                 } else {
