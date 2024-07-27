@@ -217,7 +217,7 @@ function openIndividualEchoesStoryModal(book) {
                     tempParagraph.textContent = lines[i].slice(1,-2);
                 } else if (lines[i][0] == '#') {
                     tempParagraph = document.createElement('h2');
-                    tempParagraph.textContent = lines[i].slice(1, -1);
+                    tempParagraph.textContent = lines[i].slice(1, (lines[i].length));
                     tempParagraph.style.textAlign = 'center';
                     lineNeeded = true;
                 } else {
