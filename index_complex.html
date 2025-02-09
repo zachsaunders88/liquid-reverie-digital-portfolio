@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html style="background-color: black;">
+<head>
+    <title>Liquid Reverie</title>
+    <link rel="stylesheet" type="text/css" href="./liquid.css">
+    <link rel="icon" href="../../images/profile-image3.gif" type="image/x-icon">
+    <link rel="shortcut icon" href="../../images/profile-image3.gif" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet"> 
+
+    <link href="./hover.css" rel="stylesheet" media="all">
+    <link href="./obnoxious.css" rel="stylesheet">
+</head>
+<body>
+    <div id="div1" class="viewport" style="background-color: rgb(0, 0, 0); background-image: url('./images/reverie4-compressed.jpg'); background-size:cover; background-repeat: no-repeat;">
+
+        <p style="color: white; position: absolute; top: 0%; left: 0%; margin-left: 20px; font-family: 'Courier New', Courier, monospace;">ZACH SAUNDERS</p>
+
+        <img class="vibrate-1 corner-icon " src="./images/reverie-svg.svg" style="filter: invert(100%);">
+        <div class="reverie-title title-anim1 hvr-grow" style="display: flex; flex-direction: column; align-items: center; margin-top: -20px; cursor: default;">
+            <h1 id="reverie-title" class="reverie-title title-anim1 hvr-grow">Liquid Reverie</h1>
+            <p class="reverie-title" style="font-size: 25px; margin-top: -20px;">A Digital Portfolio for my Work</p>
+            <p class="reverie-title" style="float: right; color: white; font-size: 20px;">Illustrations and artwork present on this website have been created using MidJourney</p>
+        </div>
+
+        <div class="" style="display: flex; flex-direction: column; text-align: justify;">
+            <div id="reverie-background" class="main-text-background"></div>
+            <p id="reverie-text1" class="main-text" style="display: none;"> As the torrent subsides, I’m left kneeling on the painful and grazed obsidian ground, drenched in the suffocating crimson liquid that was flowing past me like a river of torment. My eyes, plastered by the thick drench, slowly claw themselves open and acclimate to the strange place in which I find myself. My surroundings are dark and unending, an ocean of blood with a dark horizon; this place is draped in an absence of light apart from a radiating red glow crawling its way up from the crimson ocean to the roof of the seemingly infinite abyss.</p>
+            <p id="reverie-text2" class="main-text"> Nam sit amet nibh urna. Fusce sed laoreet ante. Aliquam sed quam et ipsum facilisis consequat non nec arcu. Curabitur vel ligula nec urna faucibus egestas. Proin at leo diam. Ut condimentum ut neque nec tempus. Donec ut rutrum tellus, non tincidunt diam. Suspendisse et nisi egestas, feugiat urna quis, venenatis nulla. Vivamus scelerisque ex a nisl ultricies tincidunt. In gravida pharetra metus, non hendrerit ipsum interdum in. Sed convallis commodo ex. In hac habitasse platea dictumst. </p>
+            <p id="reverie-text3" class="main-text"> Nam sit amet nibh urna. Fusce sed laoreet ante. Aliquam sed quam et ipsum facilisis consequat non nec arcu. Curabitur vel ligula nec urna faucibus egestas. Proin at leo diam. Ut condimentum ut neque nec tempus. Donec ut rutrum tellus, non tincidunt diam. Suspendisse et nisi egestas, feugiat urna quis, venenatis nulla. Vivamus scelerisque ex a nisl ultricies tincidunt. In gravida pharetra metus, non hendrerit ipsum interdum in. Sed convallis commodo ex. In hac habitasse platea dictumst. </p>
+        </div>
+
+        <img onclick="slideToRight('div1', 'divRight1')" src="./images/arrow-left.png" class="arrow-centre-right zoom-right-arrow"/>
+        <div id='cornerOne' class="bottom-corner-margin"></div>
+        <div class="hvr-bounce-in arrow-icon-bottom" onmouseleave="revertColours('cornerOne')" onmouseover="invertColours('cornerOne')" onclick="slideToNext('div1', 'div2')">
+            <img src="./images/outsiders-mark.png" style="width: 80px;"/>
+            <img src="./images/arrow-down.png" style="width: 80px; margin-top: -40px; filter:invert(100%);"/>
+        </div>
+
+    </div>
+
+    <div id="divRight1" class="viewport-side hidden" style="background-color: black;">
+        <!-- Content of your right-side viewport goes here -->
+        <img onclick="slideToLeft('divRight1', 'div1')" src="./images/arrow-left.png" class="arrow-centre-left zoom-left-arrow" style="z-index: 100;"/>
+
+        <div id="about-me-modal" class="overlay-story">
+            <div id="about-me-modal-inner" class="about-me-modal">
+                <div style="height: 35%; display: block; margin-bottom: 40px;">
+                    <div style="height: 100%; width:100%; float: right;">
+                        <h1 style="font-family: 'Playfair Display', serif; font-size: 82.5px; text-align: center; margin-top: -5px; color: white; line-height: 120px;"> Hi, My Name's Zach</h1>
+                    </div>
+                </div>
+                <div style="height: auto; display: block;">
+                    <div style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); background-color: transparent; width:auto; height: 100%; margin-top: -50px; margin-left: 15px; margin-right: 15px; border-radius: 5px;">
+                        <div style="overflow-y: scroll; -ms-overflow-style: none; scrollbar-width: none; width: 100%; height: 100%; background-color: black;">
+                            <p id="character-content" style="text-align: justify; margin:15px; color: white; font-size: 20px;">Postgraduate student in Computer Science, focused on the topics of software development, operating systems, machine learning, network security, and human-computer interaction. Pursuing a Master’s degree at UoA, with a strong commitment to research in systems security, cybersecurity, and artificial intelligence. Employed as a teaching assistant at the University, where I support students, coordinate invigilated tests, solve problems, and facilitate clear communication. I have a strong understanding of PC hardware and software (Windows, Linux, Computer Architecture) accompanied with software development experience and knowledge of complex topics in data science related to machine learning and data mining. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="my-projects-modal" class="overlay">
+            <div id="my-projects-modal-inner" class="my-projects-modal" style="align-items: center; flex-direction: column;">
+                <div style="padding-bottom: 20px; display: flex; flex-direction: row;">
+                    <input type="button" onclick="window.open('https://github.com/Chafuyee', '_blank');" value="GITHUB" class="contact-button"></button>
+                    <input type="button" onclick="window.open('https://www.linkedin.com/in/zachary-saunders-900833222/', '_blank');" value="LINKEDIN" class="contact-button"></button>
+                </div>
+                <div class="individual-project">
+                    <h1 style="color: white;">Liquid Reverie</h1>
+                    <hr style="width: 95%">
+                    <p style="color: white; text-align: center; width: 95%; margin-left: 17.5px;">This website represents a culmination of my web development skills alongside my more creative aspirations. It is coded in a fairly simple framework (HTML/CSS/JavaScript) but the design is relatively complex and multi-sectional. Using the design principles learned from my human-computer interaction course in university, I've made sure to create something that is both visually engaging and functional. This web project acts simultaneously as a software development project and a digital portfolio for myself and my creative works.  </p>
+                    <img src="./images/liquid-reverie-project.png" style="width: 100%; height: 350px; margin-bottom:-4px;">
+                </div>
+                <div class="individual-project">
+                    <h1 style="color: white;">Mass Spectrometry Hub</h1>
+                    <hr style="width: 95%">
+                    <p style="color: white; text-align: center; width: 95%; margin-left: 17.5px;">The aim of this project is the publication of the AdductHunter tool allowing users to use the tool and share their results. The website will enable users to take their Mass Spec data collected through research, run it through AdductHunter, and then publicize the results to the public and to groups that match their research niche. </p>
+                    <input type="button" onclick="window.open('https://github.com/Chafuyee/MSH-Web-App', '_blank');" value="Project Link" class="contact-button" style="margin-top: -3px;"></button>
+                    <img src="./images/MSH-project.png" style="width: 100%; height: 350px; margin-bottom:-4px; margin-top: 10px;">
+                </div>
+                <div class="individual-project">
+                    <h1 style="color: white;">Systematic Literature Review - Augmented Reality in Physics Education</h1>
+                    <hr style="width: 95%">
+                    <p style="color: white; text-align: center; width: 95%; margin-left: 17.5px;">This report presents and provides an analysis of six impactful
+                        papers in the field of augmented reality implementations for
+                        physics education. The applications detailed in these papers are
+                        comprehensive and each implementation provides the
+                        possibility to enhance the experience of students in physics
+                        education; unfortunately, there is a succinct lack of proof
+                        regarding the efficacy of these implementations in comparison
+                        to other virtual teaching methods as well as traditional teaching
+                        methods.</p>
+                    <input type="button" onclick="window.open('../../src/literature.pdf', '_blank');" value="Report PDF" class="contact-button" style="margin-top: -3px;"></button>
+                    <img src="./images/literature-review-project.png" style="width: 100%; height: 350px; margin-bottom:-3px; margin-top: 10px;">
+                </div>
+                <div class="individual-project">
+                    <h1 style="color: white;">High-Fidelity Web Prototype</h1>
+                    <hr style="width: 95%">
+                    <p style="color: white; text-align: center; width: 95%; margin-left: 17.5px;">The aim of this assignment was to develop a hi-fi prototype as a mock-up Web interface. The assignment allows you to practice skills in high fidelity design, Web technology, HTML, CSS, and JavaScript. It required putting the visual design principles discussed in COMPSCI 345 into practice. </p>
+                    <input type="button" onclick="window.open('https://github.com/Chafuyee/High-Fidelity-Web-Prototype', '_blank');" value="Project Link" class="contact-button" style="margin-top: -3px;"></button>
+                    <img src="./images/high-fidelity-project.png" style="width: 100%; height: 350px; margin-bottom:-3px; margin-top: 10px;">
+                </div>
+                <div class="individual-project">
+                    <h1 style="color: white;">Arithmetic Tree Traversal Algorithms</h1>
+                    <hr style="width: 95%">
+                    <p style="color: white; text-align: center; width: 95%; margin-left: 17.5px;">The implementation of various complex methods regarding Arithmetic Tree Traversal. </p>
+                    <input type="button" onclick="window.open('https://github.com/Chafuyee/Arithmetic-Tree-Traversal-and-Optimization', '_blank');" value="Project Link" class="contact-button" style="margin-top: -3px;"></button>
+                    <img src="./images/artihmetic-project.png" style="width: 100%; height: 350px; margin-bottom:-3px; margin-top: 10px;">
+                </div>
+                <div class="individual-project">
+                    <h1 style="color: white;">Graph Data Structures & Traversal Algorithms</h1>
+                    <hr style="width: 95%">
+                    <p style="color: white; text-align: center; width: 95%; margin-left: 17.5px;">The implementation of a digraph ADT and some basic graph traversal methods in Python. </p>
+                    <input type="button" onclick="window.open('https://github.com/Chafuyee/Graph-Algorithms-and-Traversals', '_blank');" value="Project Link" class="contact-button" style="margin-top: -3px;"></button>
+                    <img src="./images/graph-project.png" style="width: 100%; height: 350px; margin-bottom:-3px; margin-top: 10px;">
+                </div>
+                <div class="individual-project">
+                    <h1 style="color: white;">Ulam Spiral Generator</h1>
+                    <hr style="width: 95%">
+                    <p style="color: white; text-align: center; width: 95%; margin-left: 17.5px;">This project generates a prime spiral grid and provides options for displaying prime numbers as symbols or regular digits, with the prime numbers forming a visually appealing pattern. </p>
+                    <input type="button" onclick="window.open('https://github.com/Chafuyee/Ulam-Spiral-Generator', '_blank');" value="Project Link" class="contact-button" style="margin-top: -3px;"></button>
+                    <img src="./images/ulam-spiral-project.png" style="width: 100%; height: 350px; margin-bottom:-3px; margin-top: 10px;">
+                </div>
+                <div class="individual-project">
+                    <h1 style="color: white;">Klondike Solitaire Python</h1>
+                    <hr style="width: 95%">
+                    <p style="color: white; text-align: center; width: 95%; margin-left: 17.5px;">This program simulates a simplified version of Klondike Solitaire using using imported Foundation and Stock classes. The program will loop until the user wins at the game, there is no instance where the program will terminate otherwise. </p>
+                    <input type="button" onclick="window.open('https://github.com/Chafuyee/Klondike-Solitaire-Python', '_blank');" value="Project Link" class="contact-button" style="margin-top: -3px;"></button>
+                    <img src="./images/klondike-project.png" style="width: 100%; height: 350px; margin-bottom:-3px; margin-top: 10px;">
+                </div>
+                <div class="individual-project">
+                    <h1 style="color: white;">Composite Shape Game</h1>
+                    <hr style="width: 95%">
+                    <p style="color: white; text-align: center; width: 95%; margin-left: 17.5px;">This university project delves into GUI programming using Java AWT and Swing frameworks, emphasizing SOLID design principles. The application's core concept revolves around a game where users can create and manipulate shapes. </p>
+                    <input type="button" onclick="window.open('https://github.com/Chafuyee/Composite-Shape-Game', '_blank');" value="Project Link" class="contact-button" style="margin-top: -3px;"></button>
+                    <img src="./images/composite-shape-project.png" style="width: 100%; height: 350px; margin-bottom:-3px; margin-top: 10px;">
+                </div>
+                <div class="individual-project">
+                    <h1 style="color: white;">Barcode Detection Algorithm</h1>
+                    <hr style="width: 95%">
+                    <p style="color: white; text-align: center; width: 95%; margin-left: 17.5px;">This assignment required using what we had studied in the image processing lectures to generate a software that detects barcodes in images of household items. </p>
+                    <input type="button" onclick="window.open('https://github.com/Chafuyee/Barcode-Detection-Algorithm', '_blank');" value="Project Link" class="contact-button" style="margin-top: -3px;"></button>
+                    <img src="./images/barcode-detection-project.png" style="width: 100%; height: 350px; margin-bottom:-3px; margin-top: 10px;">
+                </div>
+            </div>
+        </div>
+
+
+        <div id="skills-modal" class="overlay">
+            <div id="skills-modal-inner" class="skills-modal">
+                
+              <!-- Modal content -->
+              
+              <h1 class="reverie-title" style="margin-top: 30px; margin-bottom: 30px; font-size: 80px; color: white; background-color: transparent; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); text-align: center;">Awards, Certificates & Qualifications</h1>
+
+              <div class="grid-container-awards" style="text-align: center; margin-bottom: 20px;">
+                <a class="box">
+                    <p style="color: white; font-family: 'Courier New', Courier, monospace;">Bachelor of Science, Majoring in Computer Science</p>
+                </a>
+                <a class="box">
+                    <p style="color: white; font-family: 'Courier New', Courier, monospace;">Certificate of Merit, Digital Fundamentals</p>
+                </a>
+                <a class="box">
+                    <p style="color: white; font-family: 'Courier New', Courier, monospace;">Certificate of Outstanding Achievement, Object Oriented Software Development</p>
+                </a>
+                <a class="box">
+                    <p style="color: white; font-family: 'Courier New', Courier, monospace;">Certificate of Outstanding Achievement, Principles of Programming</p>
+                </a>
+                <a class="box">
+                    <p style="color: white; font-family: 'Courier New', Courier, monospace;">Certificate of Achievement, Class Representative</p>
+                </a>
+                <a class="box">
+                    <p style="color: white; font-family: 'Courier New', Courier, monospace;">Nomination for the Excellence Award, 399 Capstone Project</p>
+                </a>
+              </div>
+
+              <h1 class="reverie-title" style="margin-bottom: 30px; font-size: 80px; color: white; background-color: transparent; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); text-align: center;">Notable Tertiary Coursework</h1>
+
+              <div class="grid-container-skills">
+                <a class="box" onclick="openIndividualCourseModal('cs101')">
+                    <h1 class="skills-title" style="text-decoration: none;">CS101</h1>
+                    <img class="cover-img" src="./images/cs101.png">
+                </a>
+                <a class="box" onclick="openIndividualCourseModal('cs130')">
+                    <h1 class="skills-title" style="text-decoration: none;">CS130</h1>
+                    <img class="cover-img" src="./images/cs130.png">
+                </a>
+                <a class="box" onclick="openIndividualCourseModal('in110')">
+                    <h1 class="skills-title" style="text-decoration: none;">INFOSYS 110</h1>
+                    <img class="cover-img" src="./images/infosys110.png">
+                </a>
+                <a class="box" onclick="openIndividualCourseModal('sc201')">
+                    <h1 class="skills-title" style="text-decoration: none;">SCIGEN 201</h1>
+                    <img class="cover-img" src="./images/scigen201.png">
+                </a>
+                <a class="box" onclick="openIndividualCourseModal('cs120')">
+                    <h1 class="skills-title" style="text-decoration: none;">CS120</h1>
+                    <img class="cover-img" src="./images/cs120.png">
+                </a>
+                <a class="box" onclick="openIndividualCourseModal('cs110')">
+                    <h1 class="skills-title" style="text-decoration: none;">CS110</h1>
+                    <img class="cover-img" src="./images/cs110.png">
+                </a>
+                <a class="box" onclick="openIndividualCourseModal('ph140')">
+                    <h1 class="skills-title" style="text-decoration: none;">PHYSICS 140</h1>
+                    <img class="cover-img" src="./images/physics140.png">
+                  </a>
+                  <a class="box" onclick="openIndividualCourseModal('cs210')">
+                    <h1 class="skills-title" style="text-decoration: none;">CS210</h1>
+                    <img class="cover-img" src="./images/cs210.png">
+                </a>
+                <a class="box" onclick="openIndividualCourseModal('cs220')">
+                    <h1 class="skills-title" style="text-decoration: none;">CS220</h1>
+                    <img class="cover-img" src="./images/cs220.png">
+                </a>
+                <a class="box" onclick="openIndividualCourseModal('cs230')">
+                    <h1 class="skills-title" style="text-decoration: none;">CS230</h1>
+                    <img class="cover-img" src="./images/cs230.png">
+                </a>
+                <a class="box" onclick="openIndividualCourseModal('cs215')">
+                    <h1 class="skills-title" style="text-decoration: none;">CS215</h1>
+                    <img class="cover-img" src="./images/cs215.png">
+                </a>
+                <a class="box" onclick="openIndividualCourseModal('cs289')">
+                    <h1 class="skills-title" style="text-decoration: none;">CS289</h1>
+                    <img class="cover-img" src="./images/cs289.png">
+                </a>
+                <a class="box" onclick="openIndividualCourseModal('cs313')">
+                    <h1 class="skills-title" style="text-decoration: none;">CS313</h1>
+                    <img class="cover-img" src="./images/cs313.png">
+                </a>
+                <a class="box" onclick="openIndividualCourseModal('cs316')">
+                    <h1 class="skills-title" style="text-decoration: none;">CS316</h1>
+                    <img class="cover-img" src="./images/cs316.png">
+                </a>
+                <a class="box" onclick="openIndividualCourseModal('cs335')">
+                    <h1 class="skills-title" style="text-decoration: none;">CS335</h1>
+                    <img class="cover-img" src="./images/cs335.png">
+                </a>
+                <a class="box" onclick="openIndividualCourseModal('cs345')">
+                    <h1 class="skills-title" style="text-decoration: none;">CS345</h1>
+                    <img class="cover-img" src="./images/cs345.png">
+                </a>
+                <a class="box" onclick="openIndividualCourseModal('cs373')">
+                    <h1 class="skills-title" style="text-decoration: none;">CS373</h1>
+                    <img class="cover-img" src="./images/cs373.png">
+                </a>
+                <a class="box" onclick="openIndividualCourseModal('cs399')">
+                    <h1 class="skills-title" style="text-decoration: none;">CS399</h1>
+                    <img class="cover-img" src="./images/cs399.png">
+                </a>
+              </div>
+
+              <h1 class="reverie-title" style="margin-top: 30px; margin-bottom: 30px; font-size: 80px; color: white; background-color: transparent; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); text-align: center;">Technical Skills and Profincies</h1>
+
+              <img src="./images/Logic.png" style="width: 100%; border: solid 2px white; margin-bottom: 20px;">
+              <img src="./images/systems.png" style="width:100%; border: solid 2px white; margin-bottom: 20px;">
+              <img src="./images/Software.png" style="width: 100%; border: solid 2px white; margin-bottom: 20px;">
+
+            </div>
+        </div>
+
+        <div id="individual-course-modal" class="overlay">
+            <div class="individual-course-modal" style="align-items: center;">
+                <h1 style="color: white;  font-family: 'Courier New', Courier, monospace;" id="course-title"></h1>
+                <p style="color: white;  font-family: 'Courier New', Courier, monospace;" id="course-skills"></p>
+                <p style="color: white;  font-family: 'Courier New', Courier, monospace;" id="course-grade"></p>
+                <hr>
+                <iframe
+                id="course-iframe"
+                src="./src/cs101.pdf"
+                width="100%"
+                height="500px"
+                style="border:none; margin-top: 20px;"
+              ></iframe>
+            </div>
+        </div>
+
+
+        <div style="width: 100%; height: 100%; display: flex; flex-direction: row; z-index: 0;">
+            <div id="personal-side1" onclick="openModal('about-me-modal')" class="hvr-grow third-div" style="background-image: url('./images/about-me.webp'); background-size: cover;">
+                <h1 class="third-div-text" style="margin-top: 100px;">About Me</h1>
+                <img id="aflen-stories" class="third-div-icon" src="./images/user.png" style="width: 100px;"/>
+            </div>
+            <div id="personal-side2" onclick="openModal('skills-modal')" class="third-div hvr-grow" style="background-image: url('./images/my-skills.png'); background-size: cover;">
+                <h1 class="third-div-text" style="margin-top: 100px;">My Skills</h1>
+                <img id="aflen-map" class="third-div-icon" src="./images/experience.png" style="width: 125px;"/>
+            </div>
+            <div id="personal-side3" onclick="openModal('my-projects-modal')" class="hvr-grow third-div" style="background-image: url('./images/my-projects.png'); background-size: cover;">
+                <h1 class="third-div-text" style="margin-top: 100px;">My Projects</h1>
+                <img id="aflen-characters" class="third-div-icon" src="./images/database.png" style="width: 100px;"/>
+            </div>
+        </div>
+    </div>
+    
+    <div id="divRight2" class="viewport-side hidden" style="background-color: black;">
+        <!-- Content of your right-side viewport goes here -->
+        <img onclick="slideToLeft('divRight2', 'div2')" src="./images/arrow-left.png" class="arrow-centre-left zoom-left-arrow" style="z-index: 100;"/>
+
+        <div id="echoes-story-modal" class="overlay">
+            <div id="echoes-story-modal-inner" class="story-modal">
+          
+              <!-- Modal content -->
+
+              <div class="grid-container">
+                <a class="box" onclick="openIndividualEchoesStoryModal('btf')">
+                    <h1 class="book-title" style="text-decoration: none;">Blood Temped Fate</h1>
+                    <img class="cover-img" src="./images/bloodtemptedfate-cover.png">
+                </a>
+                <a class="box" onclick="openIndividualEchoesStoryModal('hos')">
+                    <h1 class="book-title" style="text-decoration: none;">The Hospital of Stars</h1>
+                    <img class="cover-img" src="./images/hospitalofstars-cover.png">
+                </a>
+                <a class="box" onclick="openIndividualEchoesStoryModal('gm')">
+                    <h1 class="book-title" style="text-decoration: none;">Goldfield Massacre</h1>
+                    <img class="cover-img" src="./images/goldfieldmassacre-cover1.png">
+                </a>
+                <a class="box" onclick="openIndividualEchoesStoryModal('pog')">
+                    <h1 class="book-title" style="text-decoration: none;">The Paragon of Guilt</h1>
+                    <img class="cover-img" src="./images/theparagonofguilt-cover.png">
+                </a>
+                <a class="box">
+                    <h1 class="book-title" style="text-decoration: none;">Blighted Contingent (WIP)</h1>
+                    <img class="cover-img" src="./images/blightedcontingent-cover.png">
+                  </a>
+                  <a class="box">
+                    <h1 class="book-title" style="text-decoration: none;">Cruel Kindness (WIP)</h1>
+                    <img class="cover-img" src="./images/cruelkindness-cover.png" style="border-radius: 5px;">
+                </a>
+                <a class="box">
+                    <h1 class="book-title" style="text-decoration: none;">Lick Wet Carrion (WIP)</h1>
+                    <img class="cover-img" src="./images/lickwetcarrion-cover.png" style="border-radius: 5px;">
+                </a>
+                <a class="box">
+                    <h1 class="book-title" style="text-decoration: none;">The Price of Avarice (WIP)</h1>
+                    <img class="cover-img" src="./images/priceofavarice-cover.png" style="border-radius: 5px;">
+                </a>
+                <a class="box">
+                    <h1 class="book-title" style="text-decoration: none;">The Tempter's Province (WIP)</h1>
+                    <img class="cover-img" src="./images/temptersprovince-cover1.png" style="border-radius: 5px;">
+                </a>
+              </div>
+
+            </div>
+        </div>
+
+        <div id="echoes-individual-story-modal" class="overlay-story">
+            <div class="individual-story-modal">
+                <h1 id="story-title" style="width:auto; border-radius: 5px; margin-top:-15px ;padding: 5px;color: black; background-color: #e5decf;"> </h1>
+                <div id="story-content" class="story-content">
+                </div>
+            </div>
+        </div>
+
+        <div id="echoes-location-modal" class="overlay">
+            <div id="echoes-location-modal-inner" class="location-modal" style="width:960px; height: 600px;">
+              <!-- Close button -->
+              <span class="close-btn" onclick="closeModal('echoes-location-modal')">&times;</span>
+              <!-- Modal content -->
+              <div class="hvr-grow" onclick="openModal('empyrean-location-modal')" style="width:100%; height: 20%; background-image: url('./images/locations-empyrean.png'); background-size: cover; display: flex; flex-direction: column; cursor: pointer;">
+                <h1 class="locations-text" style="color: white; text-align: center; margin-top: 40px;">Empyrean Realm</h1>
+            </div>
+              <div class="hvr-grow" onclick="openModal('mortal-location-modal')" style="width:100%; height: 20%; background-image: url('./images/locations-mortal.png'); background-size: cover; display: flex; background-position: center; flex-direction: column; cursor: pointer;">
+                <h1 class="locations-text" style="color: white; text-align: center; margin-top: 40px;">Mortal Realm</h1>
+            </div>
+              <div class="hvr-grow" onclick="openModal('tempter-location-modal')" style="width: 100%; height: 20%; background-image: url('./images/locations-tempter2.png'); background-size: cover; display: flex; flex-direction: column; cursor: pointer; background-position: bottom;">
+                <h1 class="locations-text" style="color: white; text-align: center; margin-top: 40px;">Tempter's Realm</h1>
+            </div>
+              <div class="hvr-grow" onclick="openModal('core-location-modal')" style="width: 100%; height: 20%; background-image: url('./images/locations-core.png'); background-size: cover; display: flex; flex-direction: column; cursor: pointer;">
+                <h1 class="locations-text" style="color: white; text-align: center; margin-top: 40px;">The Core</h1>
+            </div>
+              <div class="hvr-grow" onclick="openModal('liminal-location-modal')" style="width: 100%; height: 20%; background-image: url('./images/locations-between.png'); background-size: cover; display: flex; flex-direction: column; cursor: pointer;">
+                <h1 class="locations-text" style="color: white; text-align: center; margin-top: 40px;">Liminal Realm</h1>
+            </div>
+            </div>
+        </div>
+
+        <div id="empyrean-location-modal" class="overlay">
+            <div id="empyrean-location-modal-inner" class="empyrean-modal">
+                <div class="grid-container-locations">
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                        <h1 class="location-title" style="text-decoration: none;">Kingdom of Heaven</h1>
+                        <img src="./images/kingdom-of-heaven.png">
+                    </a>
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                        <h1 class="location-title" style="text-decoration: none;">Vault of Heaven</h1>
+                        <img src="./images/vault-of-heaven.png">
+                    </a>
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                        <h1 class="location-title" style="text-decoration: none;">Arva Aurea</h1>
+                        <img src="./images/arva-aurea2.png">
+                    </a>
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                        <h1 class="location-title" style="text-decoration: none;">Marble Citadel</h1>
+                        <img src="./images/marble-citadel.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="mortal-location-modal" class="overlay">
+            <div class="mortal-modal" id="mortal-location-modal-inner">
+                <div class="grid-container-locations">
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                        <h1 class="location-title" style="text-decoration: none;">Barnes</h1>
+                        <img src="./images/barnes.png">
+                    </a>
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                        <h1 class="location-title" style="text-decoration: none;">New Northern Republic (NNR)</h1>
+                        <img src="./images/NNR.png">
+                    </a>
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                        <h1 class="location-title" style="text-decoration: none;">Goldfield</h1>
+                        <img src="./images/goldfield.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="tempter-location-modal" class="overlay">
+            <div class="tempter-modal" id="tempter-location-modal-inner">
+                <div class="grid-container-locations">
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                        <h1 class="location-title-white" style="text-decoration: none;">Hospital Of Stars</h1>
+                        <img src="./images/hospital-of-stars.png">
+                    </a>
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                        <h1 class="location-title-white" style="text-decoration: none;">Ruins of the Redeemed</h1>
+                        <img src="./images/ruins-of-the-redeemed.png">
+                    </a>
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                        <h1 class="location-title-white" style="text-decoration: none;">Monument Of Lies</h1>
+                        <img src="./images/monument-of-lies.png">
+                    </a>
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                        <h1 class="location-title-white" style="text-decoration: none;">The Topaz Court</h1>
+                        <img src="./images/topaz-court.png">
+                    </a>
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                        <h1 class="location-title-white" style="text-decoration: none;">Blighted Citadel</h1>
+                        <img src="./images/blighted-citadel.png">
+                    </a>
+                  </div>
+            </div>
+        </div>
+
+        <div id="core-location-modal" class="overlay">
+            <div class="core-modal" id="core-location-modal-inner">
+                <div class="grid-container-locations">
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                        <h1 class="location-title-white" style="text-decoration: none;">Dreadnaught's Turrim</h1>
+                        <img src="./images/dreadnaughts-turrim.png">
+                    </a>
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                        <h1 class="location-title-white" style="text-decoration: none;">Prison of the False</h1>
+                        <img src="./images/prison-of-the-false.png">
+                    </a>
+                  </div>
+            </div>
+        </div>
+
+        <div id="liminal-location-modal" class="overlay">
+            <div class="liminal-modal" id="liminal-location-modal-inner">
+                <div class="grid-container-locations">
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                        <h1 class="location-title-white" style="text-decoration: none;">Barnes</h1>
+                        <img src="./images/barnes.png">
+                    </a>
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                        <h1 class="location-title-white" style="text-decoration: none;">New Northern Republic (NNR)</h1>
+                        <img src="./images/vault-of-heaven.png">
+                    </a>
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                        <h1 class="location-title-white" style="text-decoration: none;">Goldfield</h1>
+                        <img src="./images/vault-of-heaven.png">
+                    </a>
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                        <h1 class="location-title-white" style="text-decoration: none;">Goldfield</h1>
+                        <img src="./images/vault-of-heaven.png">
+                    </a>
+                    <a class="box" style="border-radius: 0px; background-color: transparent; cursor:auto;">
+                        <h1 class="location-title-white" style="text-decoration: none;">Goldfield</h1>
+                        <img src="./images/vault-of-heaven.png">
+                    </a>
+                  </div>
+            </div>
+        </div>
+
+        <div id="echoes-character-modal" class="overlay">
+            <div id="echoes-character-modal-inner" class="character-modal">
+              <!-- Close button -->
+              <span class="close-btn" onclick="closeModal('echoes-character-modal')">&times;</span>
+                
+              <!-- Modal content -->
+                <div class="grid-container-characters">
+                    <a class="box-characters" onclick="openIndividualEchoesCharacterModal('sw')">
+                        <img src="./images/sw.png"/>
+                    </a>
+                    <a class="box-characters" onclick="openIndividualEchoesCharacterModal('lc')">
+                        <img src="./images/lc.png"/>
+                    </a>
+                    <a class="box-characters" onclick="openIndividualEchoesCharacterModal('ha')">
+                        <img src="./images/ha.png"/>
+                    </a>
+                    <a class="box-characters" onclick="openIndividualEchoesCharacterModal('fb')">
+                        <img src="./images/fb.png"/>
+                    </a>
+                    <a class="box-characters" onclick="openIndividualEchoesCharacterModal('da')">
+                        <img src="./images/da.png"/>
+                    </a>
+                    <a class="box-characters" onclick="openIndividualEchoesCharacterModal('ts')">
+                        <img src="./images/ts.png"/>
+                    </a>
+                    <a class="box-characters" onclick="openIndividualEchoesCharacterModal('du')">
+                        <img src="./images/du.png"/>
+                    </a>
+                    <a class="box-characters" onclick="openIndividualEchoesCharacterModal('pk')">
+                        <img src="./images/pk.png"/>
+                    </a>
+                    <a class="box-characters" onclick="openIndividualEchoesCharacterModal('np')">
+                        <img src="./images/np.png"/>
+                    </a>
+                    <a class="box-characters" onclick="openIndividualEchoesCharacterModal('to')">
+                        <img src="./images/to.png"/>
+                    </a>
+                    <a class="box-characters" onclick="openIndividualEchoesCharacterModal('xi')">
+                        <img src="./images/xi.png"/>
+                    </a>
+                    <a class="box-characters" onclick="openIndividualEchoesCharacterModal('mu')">
+                        <img src="./images/mu.png"/>
+                    </a>
+                    <a class="box-characters" onclick="openIndividualEchoesCharacterModal('nu')">
+                        <img src="./images/nu.png"/>
+                    </a>
+                    <a class="box-characters" onclick="openIndividualEchoesCharacterModal('fl')">
+                        <img src="./images/fl.png"/>
+                    </a>
+                    <a class="box-characters" onclick="openIndividualEchoesCharacterModal('by')">
+                        <img src="./images/by.png"/>
+                    </a>
+                    <a class="box-characters" onclick="openIndividualEchoesCharacterModal('lo')">
+                        <img src="./images/lo.png"/>
+                    </a>
+                    <a class="box-characters" onclick="openIndividualEchoesCharacterModal('al')">
+                        <img src="./images/al.png"/>
+                    </a>
+                    <a class="box-characters" onclick="openIndividualEchoesCharacterModal('ek')">
+                        <img src="./images/ek.png"/>
+                    </a>
+                    <a class="box-characters" onclick="openIndividualEchoesCharacterModal('at')">
+                        <img src="./images/at.png"/>
+                    </a>
+                    <a class="box-characters" onclick="openIndividualEchoesCharacterModal('zo')">
+                        <img src="./images/zo.png"/>
+                    </a>
+                    <a class="box-characters" onclick="openIndividualEchoesCharacterModal('en')">
+                        <img src="./images/en.png"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="echoes-individual-character-modal" class="overlay-story">
+            <div class="individual-character-modal" style="align-items: center;">
+                <div style="display: flex; text-align: center;">
+                    <img id="character-image" class="box-characters" src="" style="width: 200px; cursor:auto;"/>
+                    <div style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); margin-left: 25px; display: flex; flex-direction: column; width: 200px; height: 200px; background-color: transparent; ">
+                        <h1 id="character-name" style="margin-top: 50px; font-size: 35px; color: white;"></h1>  
+                    </div>                </div>
+                <div style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); width: 425px; height: 275px; background-color: transparent; color: white; margin-top: 30px;">
+                    <h1 id="character-tag" style="padding-top: 15px;"></h1>
+                    <hr>
+                    <div style="overflow-y: scroll; -ms-overflow-style: none; scrollbar-width: none; width: 425px; height: 60%;">
+                        <p id="character-content" style="text-align: justify; margin:15px;"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="width: 100%; height: 100%; display: flex; flex-direction: row; z-index: 0;">
+            <div id="echoes-side1" class="hvr-grow third-div" onclick="openModal('echoes-story-modal')" style="background-image: url('./images/echoes-stories.jpg'); background-size: cover;">
+                <h1 class="third-div-text" style="margin-top: 100px;">Stories</h1>
+                <img id="echoes-stories" class="third-div-icon" src="./images/book.png" style="width: 100px;"/>
+            </div>
+            <div id="echoes-side2" class="third-div hvr-grow" onclick="openModal('echoes-location-modal')" style="background-image: url('./images/echoes-map.jpg'); background-size: cover;">
+                <h1 class="third-div-text" style="margin-top: 100px;">Locations</h1>
+                <img id="echoes-map" class="third-div-icon" src="./images/map-icon.png" style="width: 200px;"/>
+            </div>
+            <div id="echoes-side3" class="hvr-grow third-div" onclick="openModal('echoes-character-modal')" style="background-image: url('./images/echoes-characters2.png'); background-size: cover;">
+                <h1 class="third-div-text" style="margin-top: 100px;">Characters</h1>
+                <img id="echoes-characters" class="third-div-icon" src="./images/people.png" style="width: 125px;"/>
+            </div>
+        </div>
+    </div>
+
+    <div id="divRight3" class="viewport-side hidden" style="background-color: black;">
+
+        <img onclick="slideToLeft('divRight3', 'div3')" src="./images/arrow-left.png" class="arrow-centre-left zoom-left-arrow" style="z-index: 100;"/>
+
+        <div id="halcyon-story-modal" class="overlay">
+            <div class="halcyon-story-modal">
+          
+              <!-- Modal content -->
+
+              <div class="grid-container">
+                <a class="box" onclick="openIndividualStoryModal('btf')">
+                    <h1 class="book-title" style="text-decoration: none;">Beyond the Boundary</h1>
+                    <img class="cover-img" src="./images/beyondtheboundary-cover.png">
+                </a>
+                <a class="box" onclick="openIndividualStoryModal('hos')">
+                    <h1 class="book-title" style="text-decoration: none;">One Foot in the Door of Death</h1>
+                    <img class="cover-img" src="./images/onefootinthedoorofdeath-cover.png">
+                </a>
+                <a class="box" onclick="openIndividualStoryModal('gm')">
+                    <h1 class="book-title" style="text-decoration: none;">Sacramentum</h1>
+                    <img class="cover-img" src="./images/sacramentum-cover.png">
+                </a>
+                <a class="box" onclick="openIndividualStoryModal('pog')">
+                    <h1 class="book-title" style="text-decoration: none;">The Tale of A Thousand Suns</h1>
+                    <img class="cover-img" src="./images/thetaleofathousandsun-cover.png">
+                </a>
+                <a class="box">
+                    <h1 class="book-title" style="text-decoration: none;">The Terminal Frontier</h1>
+                    <img class="cover-img" src="./images/theterminalfrontier-cover.png">
+                  </a>
+                  <a class="box">
+                    <h1 class="book-title" style="text-decoration: none;">Umbra - The Lunar Mark</h1>
+                    <img class="cover-img" src="./images/umbrathelunarmark-cover.png" style="border-radius: 5px;">
+                </a>
+              </div>
+
+            </div>
+        </div>
+
+        <div id="halcyon-individual-story" class="overlay-story">
+            <div class="individual-story-modal">
+                <h1 id="story-title" style="width:auto; border-radius: 5px; margin-top:-15px ;padding: 5px;color: black; background-color: #e5decf;"> </h1>
+                <div id="story-content" class="story-content">
+                </div>
+            </div>
+        </div>
+
+        <div id="halcyon-location-modal" class="overlay">
+            <div class="location-modal" style="width:960px; height: 600px;">
+              <!-- Close button -->
+              <span class="close-btn" onclick="closeEchoesLocationModal()">&times;</span>
+              <!-- Modal content -->
+              <div class="hvr-grow" style="width:100%; height: 20%; background-image: url('./images/locations-empyrean.png'); background-size: cover; display: flex; flex-direction: column; cursor: pointer;">
+                <h1 class="locations-text" style="color: white; text-align: center; margin-top: 40px;">Empyrean Realm</h1>
+            </div>
+              <div class="hvr-grow" style="width:100%; height: 20%; background-image: url('./images/locations-mortal.png'); background-size: cover; display: flex; background-position: center; flex-direction: column; cursor: pointer;">
+                <h1 class="locations-text" style="color: white; text-align: center; margin-top: 40px;">Mortal Realm</h1>
+            </div>
+              <div class="hvr-grow" style="width: 100%; height: 20%; background-image: url('./images/locations-tempter.png'); background-size: cover; display: flex; flex-direction: column; cursor: pointer;">
+                <h1 class="locations-text" style="color: white; text-align: center; margin-top: 40px;">Tempter's Realm</h1>
+            </div>
+              <div class="hvr-grow" style="width: 100%; height: 20%; background-image: url('./images/locations-core.png'); background-size: cover; display: flex; flex-direction: column; cursor: pointer;">
+                <h1 class="locations-text" style="color: white; text-align: center; margin-top: 40px;">Core Realm</h1>
+            </div>
+              <div class="hvr-grow" style="width: 100%; height: 20%; background-image: url('./images/locations-between.png'); background-size: cover; display: flex; flex-direction: column; cursor: pointer;">
+                <h1 class="locations-text" style="color: white; text-align: center; margin-top: 40px;">In-Between Realm</h1>
+            </div>
+            </div>
+        </div>
+
+        <div id="halcyon-character-modal" class="overlay">
+            <div class="character-modal">
+              <!-- Close button -->
+              <span class="close-btn" onclick="closeEchoesCharacterModal()">&times;</span>
+                
+              <!-- Modal content -->
+                <div class="grid-container-characters">
+                    <a class="box-characters" onclick="openIndividualCharacterModal('sw')">
+                        <img src="./images/sw.png"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="halcyon-individual-character" class="overlay-story">
+            <div class="individual-character-modal" style="align-items: center;">
+                <div style="display: flex; text-align: center;">
+                    <img id="character-image" class="box-characters" src="" style="width: 200px; cursor:auto;"/>
+                    <div style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); margin-left: 25px; display: flex; flex-direction: column; width: 200px; height: 200px; background-color: transparent; ">
+                        <h1 id="character-name" style="margin-top: 50px; font-size: 35px; color: white;"></h1>  
+                    </div>                </div>
+                <div style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); width: 425px; height: 275px; background-color: transparent; color: white; margin-top: 30px;">
+                    <h1 id="character-tag" style="padding-top: 15px;"></h1>
+                    <hr>
+                    <div style="overflow-y: scroll; -ms-overflow-style: none; scrollbar-width: none; width: 425px; height: 60%;">
+                        <p id="character-content" style="text-align: justify; margin:15px;"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="width: 100%; height: 100%; display: flex; flex-direction: row; z-index: 0;">
+            <div id="halcyon-side1" class="hvr-grow third-div" onclick="openHalcyonStoryModal()" style="background-image: url('./images/halcyon-stories.jpg'); background-size: cover;">
+                <h1 class="third-div-text" style="margin-top: 100px;">Stories</h1>
+                <img id="halcyon-stories" class="third-div-icon" src="./images/book.png" style="width: 100px;"/>
+            </div>
+            <div id="halcyon-side2" class="third-div hvr-grow" onclick="openHalcyonLocationModal()" style="background-image: url('./images/halcyon-locations.jpg'); background-size: cover;">
+                <h1 class="third-div-text" style="margin-top: 100px;">Locations</h1>
+                <img id="halcyon-map" class="third-div-icon" src="./images/map-icon.png" style="width: 200px;"/>
+            </div>
+            <div id="halcyon-side3" class="hvr-grow third-div" onclick="openHalcyonCharacterModal()" style="background-image: url('./images/halcyon-characters.jpg'); background-size: cover;">
+                <h1 class="third-div-text" style="margin-top: 100px;">Characters</h1>
+                <img id="halcyon-characters" class="third-div-icon" src="./images/people.png" style="width: 125px;"/>
+            </div>
+        </div>
+    </div>
+
+    <div id="divRight4" class="viewport-side hidden" style="background-color: black;">
+        <!-- Content of your right-side viewport goes here -->
+        <img onclick="slideToLeft('divRight4', 'div4')" src="./images/arrow-left.png" class="arrow-centre-left zoom-left-arrow" style="z-index: 100;"/>
+        <div id="aflen-side1" class="hvr-grow third-div" style="background-image: url('./images/aflen-stories.jpg'); background-size: cover;">
+            <h1 class="third-div-text" style="margin-top: 100px;">Stories</h1>
+            <img id="aflen-stories" class="third-div-icon" src="./images/book.png" style="width: 100px;"/>
+        </div>
+        <div id="aflen-side2" class="third-div hvr-grow" style="background-image: url('./images/aflen-locations1.jpg'); background-size: cover;">
+            <h1 class="third-div-text" style="margin-top: 100px;">Locations</h1>
+            <img id="aflen-map" class="third-div-icon" src="./images/map-icon.png" style="width: 200px;"/>
+        </div>
+        <div id="aflen-side3" class="hvr-grow third-div" style="background-image: url('./images/aflen-characters.png'); background-size: cover;">
+            <h1 class="third-div-text" style="margin-top: 100px;">Characters</h1>
+            <img id="aflen-characters" class="third-div-icon" src="./images/people.png" style="width: 125px;"/>
+        </div>
+    </div>
+
+    <div id="div2" class="viewport hidden" style="background-color: rgb(0, 0, 0); background-image: url('./images/echoes1-compressed.jpg'); background-size: cover; background-repeat: no-repeat;">
+        
+        <img class="vibrate-1 corner-icon" src="./images/outsiders-mark.png" style="width: 200px;">
+        <div class="reverie-title hvr-skew" style="display: flex; flex-direction: column; align-items: center; margin-top: -20px; cursor: default;">
+            <h1 class="reverie-title hvr-skew"">Echoes of Ichor</h1>
+            <p class="reverie-title" style="font-size: 25px; margin-top: -20px;">An unwavering debt that claws at the heart of humanity</p>
+        </div>
+
+        <div style="display: flex; flex-direction: column; text-align: justify;">
+            <div id="echoes-background" class="main-text-background"></div>
+            <p class="main-text" id="echoes-text1" style="display: none;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt varius odio at sollicitudin. Donec efficitur sem vel hendrerit posuere. Mauris sed tincidunt eros. Curabitur eleifend, magna vel interdum condimentum, velit mi rutrum dui, ut aliquam est nisl at est. Ut finibus felis vitae iaculis consectetur. Vestibulum malesuada est vitae velit finibus, vitae volutpat tellus ullamcorper. Aliquam dapibus ipsum lacus, id euismod est consequat nec. Quisque eu nulla nec tortor efficitur dapibus. Aliquam eget eros et augue varius facilisis. Pellentesque venenatis leo et libero placerat, at maximus dui posuere.</p>
+            <p class="main-text" id="echoes-text2"> Nam sit amet nibh urna. Fusce sed laoreet ante. Aliquam sed quam et ipsum facilisis consequat non nec arcu. Curabitur vel ligula nec urna faucibus egestas. Proin at leo diam. Ut condimentum ut neque nec tempus. Donec ut rutrum tellus, non tincidunt diam. Suspendisse et nisi egestas, feugiat urna quis, venenatis nulla. Vivamus scelerisque ex a nisl ultricies tincidunt. In gravida pharetra metus, non hendrerit ipsum interdum in. Sed convallis commodo ex. In hac habitasse platea dictumst. </p>
+            <p class="main-text" id="echoes-text3"> Nam sit amet nibh urna. Fusce sed laoreet ante. Aliquam sed quam et ipsum facilisis consequat non nec arcu. Curabitur vel ligula nec urna faucibus egestas. Proin at leo diam. Ut condimentum ut neque nec tempus. Donec ut rutrum tellus, non tincidunt diam. Suspendisse et nisi egestas, feugiat urna quis, venenatis nulla. Vivamus scelerisque ex a nisl ultricies tincidunt. In gravida pharetra metus, non hendrerit ipsum interdum in. Sed convallis commodo ex. In hac habitasse platea dictumst. </p>
+        </div>
+
+        <div id='cornerTwo' class="top-corner-margin" ></div>
+        <div class="hvr-bounce-in arrow-icon-top" onmouseleave="revertColours('cornerTwo')" onmouseover="invertColours('cornerTwo')" onclick="slideToPrior('div2', 'div1')">
+            <img src="./images/arrow-up.png" style="width: 80px; margin-top: -30px; filter: invert(100%);"/>
+            <img src="./images/reverie-logo.png" style="width: 80px; margin-top: -40px; filter: invert(100%);"/>
+        </div>
+
+        <img onclick="slideToRight('div2', 'divRight2')" src="./images/arrow-left.png" class="arrow-centre-right zoom-right-arrow"/>
+
+        <div id='cornerThree' class="bottom-corner-margin"></div>
+        <div class="hvr-bounce-in arrow-icon-bottom" onmouseleave="revertColours('cornerThree')" onmouseover="invertColours('cornerThree')" onclick="slideToNext('div2', 'div3')">
+            <img src="./images/acer-symbol.png" style="width: 80px;"/>
+            <img src="./images/arrow-down.png" style="width: 80px; margin-top: -40px; filter: invert(100%);"/>
+        </div>
+
+    </div>
+    <div id="div3" class="viewport hidden" style="background-color: rgb(0, 0, 0); background-image: url('./images/simulacrum-background2.png'); background-size: cover; background-repeat: no-repeat; filter: saturate(150%)">
+        
+        <img class="corner-icon vibrate-1"src="./images/acer-symbol.png">
+        <div class="reverie-title hvr-skew" style="display: flex; flex-direction: column; align-items: center; margin-top: -20px; cursor: default;">
+            <h1 class="reverie-title hvr-skew">Simulacrum</h1>
+            <p class="reverie-title" style="font-size: 25px; margin-top: -20px;">Do wires feel the pulsing watts</p>
+        </div>
+
+        <div style="display: flex; flex-direction: column; text-align: justify;">
+            <div id="halcyon-background" class="main-text-background"></div>
+            <p class="main-text" id="halcyon-text1" style="display: none;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt varius odio at sollicitudin. Donec efficitur sem vel hendrerit posuere. Mauris sed tincidunt eros. Curabitur eleifend, magna vel interdum condimentum, velit mi rutrum dui, ut aliquam est nisl at est. Ut finibus felis vitae iaculis consectetur. Vestibulum malesuada est vitae velit finibus, vitae volutpat tellus ullamcorper. Aliquam dapibus ipsum lacus, id euismod est consequat nec. Quisque eu nulla nec tortor efficitur dapibus. Aliquam eget eros et augue varius facilisis. Pellentesque venenatis leo et libero placerat, at maximus dui posuere.</p>
+            <p class="main-text" id="halcyon-text2"> Nam sit amet nibh urna. Fusce sed laoreet ante. Aliquam sed quam et ipsum facilisis consequat non nec arcu. Curabitur vel ligula nec urna faucibus egestas. Proin at leo diam. Ut condimentum ut neque nec tempus. Donec ut rutrum tellus, non tincidunt diam. Suspendisse et nisi egestas, feugiat urna quis, venenatis nulla. Vivamus scelerisque ex a nisl ultricies tincidunt. In gravida pharetra metus, non hendrerit ipsum interdum in. Sed convallis commodo ex. In hac habitasse platea dictumst. </p>
+            <p class="main-text" id="halcyon-text3"> Nam sit amet nibh urna. Fusce sed laoreet ante. Aliquam sed quam et ipsum facilisis consequat non nec arcu. Curabitur vel ligula nec urna faucibus egestas. Proin at leo diam. Ut condimentum ut neque nec tempus. Donec ut rutrum tellus, non tincidunt diam. Suspendisse et nisi egestas, feugiat urna quis, venenatis nulla. Vivamus scelerisque ex a nisl ultricies tincidunt. In gravida pharetra metus, non hendrerit ipsum interdum in. Sed convallis commodo ex. In hac habitasse platea dictumst. </p>
+        </div>
+        
+        <div id='cornerFour' class="top-corner-margin"></div>
+        <div class="hvr-bounce-in arrow-icon-top" onmouseleave="revertColours('cornerFour')" onmouseover="invertColours('cornerFour')" onclick="slideToPrior('div3', 'div2')">
+            <img src="./images/arrow-up.png" style="width: 80px; margin-top: -30px; filter: invert(100%);"/>
+            <img src="./images/outsiders-mark.png" style="width: 80px; margin-top: -40px;"/>
+        </div>
+
+        <img onclick="slideToRight('div3', 'divRight3')" src="./images/arrow-left.png" class="arrow-centre-right zoom-right-arrow"/>
+
+        <div id='cornerFive' class="bottom-corner-margin"></div>
+        <div class="hvr-bounce-in arrow-icon-bottom" onmouseleave="revertColours('cornerFive')" onmouseover="invertColours('cornerFive')" onclick="slideToNext('div3', 'div4')">
+            <img src="./images/aflen-symbol.png" style="width: 80px;"/>
+            <img src="./images/arrow-down.png" style="width:80px; margin-top:-40px; filter: invert(100%);"/>
+        </div>
+    </div>
+    <div id="div4" class="viewport hidden" style="background-color: rgb(0, 0, 0); background-image: url('./images/aflen-background1-compressed.jpg'); background-size: cover; background-repeat: no-repeat;">
+        
+        <img class="corner-icon vibrate-1" src="./images/aflen-symbol.png" >
+        <div class="reverie-title hvr-skew" style="display: flex; flex-direction: column; align-items: center; margin-top: -20px; cursor: default;">
+            <h1 class="reverie-title hvr-skew">The Chronicles of Aflen</h1>
+            <p class="reverie-title" style="font-size: 25px; margin-top: -20px;">The Stories of a Falling Empire</p>
+        </div>
+
+        <div style="display: flex; flex-direction: column; text-align: justify;">
+            <div id="aflen-background" class="main-text-background"></div>
+            <p class="main-text" id="aflen-text1" style="display: none;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt varius odio at sollicitudin. Donec efficitur sem vel hendrerit posuere. Mauris sed tincidunt eros. Curabitur eleifend, magna vel interdum condimentum, velit mi rutrum dui, ut aliquam est nisl at est. Ut finibus felis vitae iaculis consectetur. Vestibulum malesuada est vitae velit finibus, vitae volutpat tellus ullamcorper. Aliquam dapibus ipsum lacus, id euismod est consequat nec. Quisque eu nulla nec tortor efficitur dapibus. Aliquam eget eros et augue varius facilisis. Pellentesque venenatis leo et libero placerat, at maximus dui posuere.</p>
+            <p class="main-text" id="aflen-text2"> Nam sit amet nibh urna. Fusce sed laoreet ante. Aliquam sed quam et ipsum facilisis consequat non nec arcu. Curabitur vel ligula nec urna faucibus egestas. Proin at leo diam. Ut condimentum ut neque nec tempus. Donec ut rutrum tellus, non tincidunt diam. Suspendisse et nisi egestas, feugiat urna quis, venenatis nulla. Vivamus scelerisque ex a nisl ultricies tincidunt. In gravida pharetra metus, non hendrerit ipsum interdum in. Sed convallis commodo ex. In hac habitasse platea dictumst. </p>
+            <p class="main-text" id="aflen-text3"> Nam sit amet nibh urna. Fusce sed laoreet ante. Aliquam sed quam et ipsum facilisis consequat non nec arcu. Curabitur vel ligula nec urna faucibus egestas. Proin at leo diam. Ut condimentum ut neque nec tempus. Donec ut rutrum tellus, non tincidunt diam. Suspendisse et nisi egestas, feugiat urna quis, venenatis nulla. Vivamus scelerisque ex a nisl ultricies tincidunt. In gravida pharetra metus, non hendrerit ipsum interdum in. Sed convallis commodo ex. In hac habitasse platea dictumst. </p>
+        </div>
+        
+
+        
+        <div id='cornerSix' class="top-corner-margin"></div>
+        <div class="hvr-bounce-in arrow-icon-top" onmouseleave="revertColours('cornerSix')" onmouseover="invertColours('cornerSix')"  onclick="slideToPrior('div4', 'div3')">
+            <img src="./images/arrow-up.png" style="width: 80px; margin-top: -30px; filter: invert(100%);"/>
+            <img src="./images/acer-symbol.png" style="width: 80px; margin-top: -40px;"/>
+        </div>
+
+        <img onclick="slideToRight('div4', 'divRight4')" src="./images/arrow-left.png" class="arrow-centre-right zoom-right-arrow"/>
+
+    </div>
+
+    <script src="./liquid.js"></script>
+</body>
+</html>

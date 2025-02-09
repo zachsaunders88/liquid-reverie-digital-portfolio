@@ -148,9 +148,92 @@ function revealText(name) {
 
 var individualEchoesStoryModal = document.getElementById('echoes-individual-story-modal');
 var individualEchoesCharacterModal = document.getElementById('echoes-individual-character-modal');
-
+var individualStoryModal = document.getElementById('individual-story-modal')
 var individualCourseModal = document.getElementById('individual-course-modal');
 
+function openIndividualStory(book) {
+    individualStoryModal.style.display = 'flex'
+    const filePath = './stories/' + book + '.txt';
+    var bookTitle;
+
+    switch(book) {
+        case 'btf':
+            bookTitle = 'Blood Tempted Fate';
+            break;
+        case 'gm':
+            bookTitle = 'Goldfield Massacre';
+            break;
+        case 'pog':
+            bookTitle = 'Paragon of Guilt';
+            break;
+        case 'hos':
+            bookTitle = 'Hospital of Stars';
+            break;
+        case 'bc':
+            bookTitle = 'Blighted Contingent';
+            break;
+        case 'ck':
+            bookTitle = 'Cruel Kindness';
+            break;
+        case 'lwc':
+            bookTitle = 'Lick Wet Carrion';
+            break;
+        case 'poa':
+            bookTitle = 'Price of Avarice';
+            break;
+        case 'ttp':
+            bookTitle = 'The Temper\'s Province';
+            break;
+    }
+
+    let titleElement = document.getElementById('story-title');
+    titleElement.textContent = bookTitle;
+
+    fetch(filePath)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Failed to fetch file: ${response.statusText}');
+            }
+            return response.text();
+        })
+        .then(fileContent => {
+            console.log('File Content:', fileContent);
+
+            const lines = fileContent.split('\n');
+            let contentDiv = document.getElementById('story-content');
+            contentDiv.innerHTML = "";
+            let lineNeeded = false;
+
+            for (i=0 ; i<lines.length; i++) {
+                let tempLine = document.createElement('hr');
+                tempLine.style.width = '92.5%';
+                lineNeeded = false;
+                let tempParagraph = document.createElement('p');
+                tempParagraph.style.paddingLeft = '30px';
+                tempParagraph.style.paddingRight = '30px';
+                if (lines[i][0] == '_') {
+                    tempParagraph.style.fontStyle = 'italic';
+                    tempParagraph.textContent = lines[i].slice(1,-2);
+                } else if (lines[i][0] == '#') {
+                    tempParagraph = document.createElement('h2');
+                    tempParagraph.textContent = lines[i].slice(1, (lines[i].length));
+                    tempParagraph.style.textAlign = 'center';
+                    lineNeeded = true;
+                } else {
+                    tempParagraph.textContent = lines[i];
+                }
+                contentDiv.appendChild(tempParagraph);
+                if (lineNeeded == true) {
+                    contentDiv.appendChild(tempLine);
+                }
+            }
+
+            console.log("Lines:", lines);
+        })
+        .catch(error => {
+            console.error('Error fetching file:', error);
+        });
+}
 
 function openIndividualEchoesStoryModal(book) {
     individualEchoesStoryModal.style.display = 'flex';
@@ -234,7 +317,6 @@ function openIndividualEchoesStoryModal(book) {
         .catch(error => {
             console.error('Error fetching file:', error);
         });
-    
 }
 
 function openIndividualEchoesCharacterModal(name) {
